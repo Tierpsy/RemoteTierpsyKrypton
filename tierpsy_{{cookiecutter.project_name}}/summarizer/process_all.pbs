@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -N {{cookiecutter.project_name}}_summarizer
+#PBS -J 1-10
+#PBS -l walltime=20:00:00
+#PBS -l select=1:ncpus=1
+#PBS -e {{cookiecutter.project_name}}_summarizer.err
+#PBS -o {{cookiecutter.project_name}}_summarizer.log
+
+module load Anaconda3
+source activate tierpsy
+
+cd $PBS_O_WORKDIR
+FILESSOURCE="./cmds2process.txt"
+
+echo "Username: " `whoami`
+FSOURCE=$(awk "NR==$PBS_ARRAY_INDEX" $FILESSOURCE)
+echo $FSOURCE
+eval $FSOURCE >& ./pbs_output/output.$PBS_ARRAY_INDEX
+exit 0
