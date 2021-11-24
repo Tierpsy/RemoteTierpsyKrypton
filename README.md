@@ -135,7 +135,7 @@ mkdir ~/Tmp
 Here we assume you're logged into Krypton, and that Tierpsy Tracker and `cookiecutter` are already installed on Krypton, in a conda env named `tierpsy`.
 
 To create the project directory tree, on Krypton:
-```
+``` bash
 cd ~
 module load Anaconda3  # whenever you log in
 source activate tierpsy  # unless the prompt already shows (tierpsy)
