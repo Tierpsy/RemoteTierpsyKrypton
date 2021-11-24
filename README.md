@@ -234,7 +234,7 @@ You can check the state of job array by running:
 
 The progress of an individual job with array ID `$N` (i.e. the output that would be printed in the analysis window of the Tierpsy GUI) is printed in a text file `output.$N` in the folder `pbs_output`. Therefore to monitor the progress of individual tasks you can read the corresponding file, using for example
 - `cat pbs_output/output.$N` or in alternative
-- `tail pbs_output/output.$N`\
+- `tail pbs_output/output.$N`
 
 from the `workspace` subfolder in the project folder.
 
