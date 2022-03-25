@@ -62,8 +62,5 @@
     "n_cores_used": 1,
     "nn_filter_to_use": "pytorch_default",
     "use_nn_food_cnt": false,
-    "MWP_total_n_wells": 96,
-    "MWP_whichsideup": "upright",
-    "MWP_well_shape": "square",
-    "MWP_well_masked_edge": 0.1
+    "MWP_mapping": "HYDRA_96WP_UPRIGHT.json"
 }

@@ -23,10 +23,10 @@ filter_args = {
     'filter_travel_min': '',
     'filter_time_units': 'frame_numbers',
     'filter_distance_units': 'microns',
-    'filter_length_min': '200',
-    'filter_length_max': '2000',
+    'filter_length_min': '700',
+    'filter_length_max': '1300',
     'filter_width_min': '20',
-    'filter_width_max': '500'
+    'filter_width_max': '200'
     }
 #kwargs = dict(fold_args, **filter_args)
 
