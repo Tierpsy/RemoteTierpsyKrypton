@@ -106,7 +106,7 @@ The process is very similar to the one explained in [Tierpsy's github repo](http
 On Krypton:
 ``` bash
 cd ~
-module load Anaconda 3  # this makes conda available
+module load Anaconda3  # this makes conda available
 git clone https://github.com/Tierpsy/tierpsy-tracker
 ```
 
